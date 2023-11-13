@@ -182,7 +182,7 @@
 
         this.element.prepend(this.wrapper);
 
-        if (!iOS && !android) {
+
             this.video = $("<video>" +
                 "<source src='" + this.path + ".mp4' type='video/mp4'>" +
                 "<source src='" + this.path + ".webm' type='video/webm'>" +
@@ -228,7 +228,7 @@
             $(this.element).bind("resize." + pluginName, function () {
                 that.resize();
             });
-        }
+
     };
 
     /**
